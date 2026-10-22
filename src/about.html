@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | INSIGNIA</title>
+    <link rel="icon" href="/res/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+
+        html{
+            scroll-behavior: auto;
+            scroll-snap-type: none;
+        }
+
+        #layer-2 .st1 {
+            stroke-dasharray: 10000;
+            stroke-dashoffset: 10000;
+            animation: drawPath1 8.5s ease-out 2.3s forwards;
+            transition: filter 0.7s ease, stroke 0.7s ease;
+        }
+        #layer-2 .st2 {
+            stroke-dasharray: 2200;
+            stroke-dashoffset: 2200;
+            animation: drawPath2 2.8s ease-out 2s forwards;
+            transition: filter 0.7s ease;
+        }
+        #layer-2 .st3 {
+            stroke-dasharray: 2200;
+            stroke-dashoffset: 2200;
+            animation: drawPath2 2.8s ease-out 2s forwards;
+            transition: filter 0.7s ease;
+        }
+        @keyframes drawPath1 {
+            0%   { stroke-dashoffset: 10000; filter: drop-shadow(0 0 0px transparent); }
+            30%  { filter: drop-shadow(0 0 6px #00f0ff88); }
+            100% { stroke-dashoffset: 0; filter: drop-shadow(0 0 3px #00f0ff55); }
+        }
+        @keyframes drawPath2 {
+            0%   { stroke-dashoffset: 2200; }
+            100% { stroke-dashoffset: 0; }
+        }
+
+    </style>
+
+  <!-- Preloader -->
+<div class="preloader">
+    <div class="logo">
+      <svg id="logoSVG" width="198" height="40" viewBox="0 0 198 40" xmlns="http://www.w3.org/2000/svg">
+
+        <path d="M1.75 0H0V39.8026H1.75V0Z" />
+        <path d="M34.0438 25.1751C34.0438 25.5126 33.9724 25.8414 33.8356 26.1615C33.6989 26.4817 33.5026 26.7716 33.247 27.0355C32.9913 27.2994 32.694 27.5243 32.3491 27.7104C32.0042 27.8964 31.6236 28.0478 31.2133 28.1603C31.1658 28.1603 31.0884 28.169 30.9695 28.1906C30.8565 28.2079 30.7257 28.2209 30.589 28.2209H29.8992C29.5781 28.2209 29.257 28.1819 28.9359 28.1084C28.6148 28.0348 28.3175 27.931 28.038 27.7969C27.7645 27.6671 27.5088 27.507 27.2769 27.3167C27.045 27.1306 26.8368 26.923 26.6585 26.698L7 0V39.8026H7.90384V14.6231C7.90384 14.2857 7.97519 13.9569 8.11196 13.6367C8.24872 13.3166 8.44495 13.0267 8.70064 12.7628C8.95039 12.4989 9.24175 12.2739 9.56285 12.0879C9.88396 11.9018 10.2526 11.7504 10.6689 11.6379C10.7224 11.6379 10.7759 11.6379 10.8413 11.6293C11.097 11.6033 11.3586 11.5817 11.6203 11.5817H12.0425C12.3636 11.5817 12.6847 11.6206 13.0058 11.6942C13.3269 11.7677 13.6242 11.8715 13.9037 12.0057C14.1772 12.1355 14.4329 12.2955 14.6648 12.4859C14.8967 12.6763 15.0989 12.8796 15.2832 13.1046L34.9476 39.8026V0H34.0378V25.1751H34.0438Z" />
+        <path d="M64.6084 21.4327C62.657 20.5199 60.5396 19.7152 58.2383 19.0057C55.937 18.3005 53.8196 17.5477 51.8742 16.7516C49.9288 15.9513 48.3095 15.0038 47.0106 13.9092C45.7058 12.8103 45.0533 11.4086 45.0533 9.69968C45.0533 6.28186 46.0972 3.87209 48.1969 2.479C50.2906 1.08591 53.2858 0.389372 57.1707 0.389372C58.9085 0.389372 60.4032 0.519163 61.6546 0.778744C62.9061 1.04265 63.9441 1.31954 64.7626 1.61806C65.7827 1.99012 66.6309 2.4141 67.2892 2.89866L68.3628 1.44933C67.5443 1.18975 66.5716 0.947471 65.4506 0.722501C64.4779 0.540794 63.2857 0.372066 61.886 0.22497C60.4803 0.0735482 58.8314 0 56.9394 0C54.9465 0 53.0426 0.177381 51.2217 0.527815C49.4127 0.882576 47.8113 1.42337 46.4294 2.14587C45.0533 2.8727 43.9501 3.78123 43.1376 4.8758C42.3191 5.97469 41.9098 7.26394 41.9098 8.75221C41.9098 10.6082 42.5563 12.1224 43.8671 13.2949C45.166 14.463 46.803 15.4494 48.7722 16.2498C50.7413 17.0458 52.8647 17.7813 55.1363 18.4519C57.4139 19.1181 59.5372 19.9012 61.5064 20.7924C63.4755 21.6837 65.1066 22.7782 66.4114 24.0805C67.7104 25.3827 68.3687 27.0916 68.3687 29.2072C68.3687 30.3969 68.2026 31.5953 67.8705 32.8024C67.5383 34.0094 66.8859 35.1083 65.9132 36.0904C64.9405 37.0768 63.6001 37.8772 61.8919 38.4872C60.1778 39.1016 57.9714 39.4087 55.2609 39.4087C52.7045 39.4087 50.5693 39.1405 48.8552 38.5997C47.147 38.0632 45.7829 37.4749 44.7568 36.8432C43.4816 36.1034 42.4792 35.2641 41.7616 34.3339L40 35.3939C41.0735 36.2116 42.3487 36.9557 43.8375 37.6263C45.166 38.18 46.7852 38.6949 48.701 39.1578C50.6168 39.6207 52.8825 39.837 55.4862 39.7981C58.0426 39.7981 60.3023 39.5212 62.2774 38.9631C64.2406 38.405 65.9073 37.6695 67.2596 36.761C68.6178 35.8525 69.6498 34.7925 70.3675 33.5855C71.0852 32.3784 71.441 31.1411 71.441 29.8778C71.441 27.7968 70.7886 26.0966 69.4838 24.777C68.173 23.4575 66.5419 22.3413 64.6084 21.4327Z"/>
+        <path d="M77.7467 0H76V39.8026H77.7467V0Z" />
+        <path d="M98.1825 19.0057V23.4359C102.103 22.3154 118.133 18.5039 118.133 27.8661C118.133 33.3606 113.037 37.4533 106.084 37.4533C95.2702 37.4533 85.1843 27.5287 85.1843 16.8772C85.1843 7.73987 91.57 2.35787 99.6984 2.35787C105.637 2.35787 111.861 5.49881 115.442 9.98093L118.247 7.23368C114.606 2.80348 109.056 0 102.891 0C91.9102 0 83 8.91231 83 19.9013C83 30.8902 91.9102 39.8026 102.891 39.8026C111.575 39.8026 118.808 34.3643 118.808 27.8618C118.808 20.0743 109.617 16.9334 98.1825 19.0057Z" />
+        <path d="M151.038 25.1751C151.038 25.5126 150.967 25.8414 150.83 26.1615C150.693 26.4817 150.497 26.7716 150.242 27.0355C149.986 27.2994 149.689 27.5243 149.344 27.7104C149 27.8964 148.619 28.0478 148.209 28.1603C148.161 28.1603 148.084 28.169 147.965 28.1906C147.852 28.2079 147.722 28.2209 147.585 28.2209H146.895C146.574 28.2209 146.253 28.1819 145.933 28.1084C145.612 28.0348 145.314 27.931 145.035 27.7969C144.762 27.6671 144.506 27.507 144.274 27.3167C144.042 27.1306 143.834 26.923 143.656 26.698L124 0V39.8026H124.903V14.6231C124.903 14.2857 124.975 13.9569 125.111 13.6367C125.248 13.3166 125.444 13.0267 125.7 12.7628C125.95 12.4989 126.241 12.2739 126.562 12.0879C126.883 11.9018 127.251 11.7504 127.667 11.6379C127.721 11.6379 127.774 11.6379 127.84 11.6293C128.095 11.6033 128.357 11.5817 128.618 11.5817H129.052C129.373 11.5817 129.694 11.6206 130.015 11.6942C130.336 11.7677 130.633 11.8715 130.913 12.0057C131.186 12.1355 131.442 12.2955 131.673 12.4859C131.905 12.6763 132.107 12.8796 132.292 13.1046L151.948 39.8026V0H151.038V25.1751Z" />
+        <path d="M158.747 0H157V39.8026H158.747V0Z" />
+        <path d="M167.588 24.1073L176.798 0H179.081L193.33 37.1773C193.591 37.9601 194.063 38.4835 194.747 38.7473C195.432 39.0068 196.243 39.1408 197.188 39.1408V39.5344H186.324V39.1408C187.269 39.1408 188.159 39.0327 189 38.8165C189.842 38.6002 190.103 38.1202 189.788 37.3806L184.356 23.2683C183.569 23.5278 182.884 23.9213 182.309 24.4446C181.734 24.968 181.207 25.5778 180.734 26.2741C180.262 26.9704 179.826 27.7359 179.432 28.562C179.039 29.3881 178.633 30.1968 178.215 30.9797C177.634 32.0695 177.047 33.1465 176.447 34.2147C175.841 35.283 175.145 36.2302 174.358 37.0562C173.571 37.8823 172.65 38.5483 171.602 39.05C170.555 39.5517 169.319 39.8026 167.902 39.8026C166.485 39.8026 165.462 39.4566 164.832 38.7559C164.305 38.1461 164.033 37.3719 164.003 36.4377C163.978 35.5036 164.124 34.4007 164.433 33.1378C164.747 31.8749 165.183 30.4823 165.728 28.9556C166.286 27.4202 166.903 25.807 167.588 24.1073ZM165.541 38.2845C166.068 38.8511 166.855 39.1322 167.902 39.1322C168.793 39.1322 169.568 38.8943 170.222 38.4143C170.876 37.9342 171.481 37.2941 172.032 36.4853C172.584 35.6809 173.122 34.777 173.649 33.7736C174.176 32.7702 174.697 31.7495 175.224 30.7029C175.751 29.6995 176.271 28.7437 176.798 27.8268C177.325 26.9142 177.937 26.0838 178.645 25.3442C179.354 24.6047 180.153 24.0035 181.043 23.5494C181.933 23.0909 182.987 22.8617 184.192 22.8617L176.556 2.93232L168.217 24.7604C167.636 26.3303 167.085 27.8224 166.564 29.2367C166.037 30.651 165.632 31.9484 165.347 33.1248C165.056 34.3012 164.917 35.3349 164.917 36.2302C164.911 37.1211 165.117 37.8088 165.541 38.2845Z" />
+
+        </svg>
+    </div>
+
+        <div class="loading-line">
+            <span class="progress"></span>
+        </div>
+</div>
+
+
+    <div class="nav-wrapper">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <img src="../res/logo2.svg" alt="" height="73px" width="150px">
+            <a id="navLogin" onclick="openAuth()">Login</a>
+            <a id="navSignup" onclick="openAuth(true)">Sign Up</a>
+        </div>
+    </div>
+
+
+    <!-- AUTH MODAL -->
+    <div class="auth-overlay" id="authOverlay" onclick="closeAuth(event)">
+    <div class="auth-modal glass">
+
+        <button class="close-btn" onclick="forceClose()">✕</button>
+
+        <!-- LOGIN -->
+        <section class="auth-card" id="loginCard">
+        <h2 class="auth-title">Welcome Back</h2>
+        <p class="auth-sub">Access your INSIGNIA account</p>
+
+        <form class="auth-form">
+            <input type="email" placeholder="Email Address" required />
+            <input type="password" placeholder="Password" required />
+            <button class="primary-btn">Login</button>
+        </form>
+
+        <p class="switch">
+            Don’t have an account?
+            <span onclick="toggleAuth()">Sign Up</span>
+        </p>
+        <p class="switch">
+            <span onclick="showForgot()">Forgot password?</span>
+        </p>
+        </section>
+
+        <!-- FORGOT PASSWORD -->
+        <section class="auth-card hidden" id="forgotCard">
+          <h2 class="auth-title">Reset Password</h2>
+          <p class="auth-sub">Enter your email to receive reset instructions</p>
+          <form id="forgotForm" class="auth-form">
+              <input type="email" name="email" placeholder="Email Address" required />
+              <button class="primary-btn" type="submit">Send</button>
+          </form>
+          <p class="switch">
+              <span onclick="backToLogin()">Back to Login</span>
+          </p>
+        </section>
+
+        <!-- SIGNUP -->
+        <section class="auth-card hidden" id="signupCard">
+        <h2 class="auth-title">Create Account</h2>
+        <p class="auth-sub">Join the future of understanding</p>
+
+        <form class="auth-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="password" placeholder="Password" required />
+            <button class="primary-btn">Sign Up</button>
+        </form>
+
+        <p class="switch">
+            Already have an account?
+            <span onclick="toggleAuth()">Login</span>
+        </p>
+        </section>
+
+    </div>
+    </div>
+
+    <svg id="layer-2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 2156.61 4050.48">
+        <path class="st2" d="M525.41,491.85c-17.23,156.04-90.78,465.29-282.83,478.29-6.06.31-12.54-.32-18.67-1.99-36.27-9.24-68.01-54.58-38.25-87.46,31.79-29.64,105.99-25.97,161.51-13.95,87.7,19.19,191.93,65.13,255.13,122.44,274.9,263.84,549.45-42.29,609.57,540.32"/>
+        <path class="st3" d="M1858.02,3118.15"/>
+        <path class="st1" d="M1210.59,1630.31c21.99,163.47,54.32,382.92,229.05,447.8,40.78,13.55,89.25,15.93,125.47-9.8,27.3-19.37,33.15-52.73,13.5-80.17-13.8-19.49-34.52-31.76-57.71-39.38-91.4-28.83-185.68,19.87-241.33,92.56-54.15,68.5-82.29,153.1-120.53,230.99-74.75,156.51-166.51,213-338.02,219.25-20.65,1.18-41.27.95-61.74-1.2-13.66-1.37-28.8-2.98-41.91-3.52-137.68-1.03-330.87-4.13-438.69,86.93-73.13,61.7-85.94,161.4-37.81,242.91,22.59,39.35,55.34,62.8,93.38,85.99,49.99,31.43,85.26,49.41,138.53,65.96,13.91,4.44,28.22,8.74,41.7,12.52,66.54,18.41,156.82,18.89,229.47,19.67,152.89-3.33,249.75-32.04,394.44-73.95,34.85-10.19,77.16-21.73,115.29-31.35,227.55-54.55,395.77-110.37,570.06-101.95,79.61,4.69,155.2,15.78,202.51,70.03,67.31,89.12,17.15,199.04-52,283.91-36.87,45.71-75.32,78.1-118.94,116.81l-73.49,57.36c-13.41,14.3-63.43,48.64-77.08,62.74-15.7,16.3-36.83,35.68-53.11,51.14-258.22,246.92-561.44,533.09-936.27,554.74-34.85-.22-83.52-3.5-107.17-29.89-13.3-15.55-11.06-36.88-.78-53.39,10.96-18.38,29.59-34.24,47.62-46.83,268.95-180.6,898.83-196.85,1196.17-81.74,105.94,38.79,221.9,120.41,165.45,245.84-26.6,58.97-68.63,101.55-116.9,147.78-134.64,126.03-629.15,274.55-730.97,431.27"/>
+        <circle class="st0" cx="1186.73" cy="2213.9" r="25"/>
+        <circle class="st0" cx="218.66" cy="2712.22" r="25"/>
+        <circle class="st0" cx="1980.82" cy="2828.36" r="25"/>
+        <circle class="st0" cx="1446.64" cy="4413.33" r="25"/>
+        <circle class="st0" cx="982.38" cy="3737.55" r="25"/>
+    </svg>
+    <div class="about-hero-wrapper">
+        <div class="about-hero">
+            <div class="about-hero-content">
+                <div class="subtitle"> <span>INSIGNIA</span> was established with a singular, <em>vital mission</em>:
+                    to empower every <em>hard of hearing</em> individual and fostering any individual to understand
+                    the basic <em>necessity of communication</em>
+                </div>
+                <div class="title">about us</div>
+            </div>
+        </div>
+    </div>
+    <div class="step1-wrapper">
+
+        <div class="slide2">
+                <h1 class="step1">Occurance Of Problem</h1>
+                <div class="para1">Before even founding the team , member of insignia encountered a hard to hear individual seeing their inability to communicate effectivly , it seems a problem is identified</div>
+                <p class="para2">This moment of stalled connection wasn't just an awkward silence—it was a revelation. It laid bare the systemic communication barriers that millions face daily. By identifying this profound gap, the seeds of Insignia were sown: the realization that accessibility isn't just a feature, but a fundamental necessity for human connection. </p>
+                <p class="para3">When caught with the broad problem , we needed to identify how much impact would this create
+would this be sufficient ? would it be effecient ?</p>
+                <p class="para4">430 Million: People have "disabling" hearing loss
+                   <br>  The Global Sign Language Apps market is projected to grow from $1.47 billion in 2025 to $3.17 billion by 2031.
+                </p>
+                <p class="para5">Best practical way to tackle the problem was visualized to make a web-based real-time sign translation through an object detection model
+                    <br>This then included the further neccessities to accommodate this idea with help of flask , OpenCV and MediaPipe
+                </p>
+                <p class="para6">Developed using VSCode, web3, GSAP, Python, Flask, and many more with support of version control , real time user fps tracking, low latency and seamless translation in multiple languages</p>
+                <h1 class="step2">2. Understanding Scope</h1>
+                <h1 class="step3">3. Analysis</h1>
+                <h1 class="step4">4. Visualization</h1>
+                <h1 class="step5">5. Creation</h1>
+                <h1 class="step6">6. INSIGNIA</h1>
+        </div>
+    </div>
+
+
+<footer class="max-footer footer">
+  <div class="noise"></div>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Bridging Worlds, One Gesture at a Time -</span>
+      <span>Empowering Voices, Creating Connections -</span>
+      <span>Breaking Barriers with Every Sign -</span>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="footer-content">
+    <div class="footer-main">
+        <div class="footer-para">
+            <p>The Insignia has primary objective to help hard to hear people in day to day life. The model
+                uses TensorFlow for computing, with help of OpenCV and MediaPipe is responsible for
+                linkage with web interface.The goal resides to make communications easier and accessible also being
+                able to learn the basic neccessity of sign language.
+            </p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="translate.html">Translate</a>
+            <a href="learn.html">Learn Now</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+    <h1 class="footer-title">
+      <!-- CREATED<br>
+      WITH<br>
+      INTENT -->
+      <img src="/res/logo.svg" alt="">
+    </h1>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <span>© 2026 INSIGNIA</span>
+    <span>Engineered with Intent</span>
+  </div>
+</footer>
+
+
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
